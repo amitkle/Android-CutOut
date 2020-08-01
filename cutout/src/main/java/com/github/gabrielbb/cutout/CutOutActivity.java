@@ -132,8 +132,8 @@ public class CutOutActivity extends AppCompatActivity {
         doneButton.setOnClickListener(v -> startSaveDrawingTask());
 
         if (getIntent().getBooleanExtra(CUTOUT_EXTRA_INTRO, false) && !getPreferences(Context.MODE_PRIVATE).getBoolean(INTRO_SHOWN, false)) {
-            Intent intent = new Intent(this, IntroActivity.class);
-            startActivityForResult(intent, INTRO_REQUEST_CODE);
+            //Intent intent = new Intent(this, IntroActivity.class);
+            //startActivityForResult(intent, INTRO_REQUEST_CODE);
         } else {
             start();
         }
